@@ -53,7 +53,7 @@ async function listTubes() {
     const tubes = await bean.listTubes();
     const promises = tubes.map((tube) => bean.statsTube(tube));
     const tubeStats = await Promise.all(promises);
-    let ret = [];
+    const ret = [];
     for (const stats of tubeStats) {
         ret.push({
             tube: stats.name,
@@ -75,7 +75,7 @@ async function put() {
 }
 async function pause() {
     const bean = await getBean();
-    bean.executeCommand();
+    throw new Error("Not implemented");
     bean.disconnect();
 }
 async function getBean() {
