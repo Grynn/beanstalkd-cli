@@ -1,6 +1,6 @@
 {
   "name": "beanstalkd-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple Beantalkd cli interface",
   "main": "dist/BeanstalkdConsumer.js",
   "bin": {
