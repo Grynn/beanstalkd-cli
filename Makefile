@@ -20,4 +20,4 @@ clean:
 	rm -rf ./dist
 
 publish: dist
-	npx np
+	npx np --no-2fa
